@@ -1,13 +1,13 @@
 Parameters:
 # New Bucket name
-  bankyb2:
+  bankyb:
     Description: Existing Bucket name
     Type: String
 Resources:
 WebsiteBucket:
   Type: AWS::S3::Bucket
   Properties:
-    BucketName: !Sub "${bankyb2}"
+    BucketName: !Sub "${bankyb}"
     AccessControl: PublicRead
     WebsiteConfiguration:
       IndexDocument: index.html
